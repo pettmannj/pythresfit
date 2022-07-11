@@ -1,0 +1,11 @@
+,0
+pythresfitter version,1.1.0b
+Date of fitting,2021-01-02
+Normalise data,Yes
+Normalisisation column,0
+Potency threshold,0.15 (rel)
+Extrapolate potency,Yes (10.0 %)
+Fitting method,leastsq
+Shared parameters,"['hill', 'bottom']"
+Parameter bounds:,"[('hill', Bound(min=0.3, max=2))]"
+Fixed parameters,"[('s', 1)]"
