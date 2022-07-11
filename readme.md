@@ -19,7 +19,7 @@ Changes:
 * Automatic bell-shape removal to exclude data that is decreasing at high doses.
 * Adaptive guessing based on data.
 
-A python script to fit dose-response curves with a 4P/5P sigmoidal function and calculate a threshold. In contrast to extracting the EC50, this method is independent of the Emax. This prevents significant errors when the latter is not well defined due to extrapolation. Either a absolute threshold can be applied, or data can be normalised to a given column and a relative threshold applied.
+A python script to fit dose-response curves with a 4P/5P sigmoidal function and calculate a threshold. I was devleoped to fit T cells stimulated with a titration of ligands, but can also be used for other datasets. Further fitting models can be added where required. I developed this script to allow extracting an absolute or relative threshold value, rather than relying on an EC50 for characterizing the respose. In contrast to extracting the EC50, this method is independent of the Emax. This prevents significant errors when the latter is not well defined due to extrapolation. Either a absolute threshold can be applied, or data can be normalised to a given column and a relative threshold applied.
 
 This code was used in our 2021 paper to fit the data: [Pettmann et al. The discriminatory power of the T cell receptor. eLife. 2021.](https://elifesciences.org/articles/67092)
 
