@@ -21,6 +21,8 @@ Changes:
 
 A python script to fit dose-response curves with a 4P/5P sigmoidal function and calculate a threshold. In contrast to extracting the EC50, this method is independent of the Emax. This prevents significant errors when the latter is not well defined due to extrapolation. Either a absolute threshold can be applied, or data can be normalised to a given column and a relative threshold applied.
 
+This code was used in our 2021 paper to fit the data: [Pettmann et al. The discriminatory power of the T cell receptor. eLife. 2021.](https://elifesciences.org/articles/67092)
+
 ### Data
 This script imports data from CSV files, where the columns are referring to the curves and the index to the x-values. One file consistutes one dataset. All data within one dataset is fit together and therefore parameters can be shared, if desired.
 Data is fitted on a linear scale and therefore this script accepts 0 as x-values. All the columns in each dataset (i.e. file) need to have the same number of x-values. If this is not the case (e.g. because values had to be excluded), one has to manually fill in nan_values (i.e. -99999). These values will be ignored for the actual fit.
